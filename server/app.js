@@ -50,7 +50,7 @@ app.use(session({
   key: 'sessionID',
   store: new RedisStore({
     host: redisURL.hostname,
-    post: redisURL.port,
+    port: redisURL.port,
     pass: redisPASS,
   }),
   secret: 'Domo Arigato',
